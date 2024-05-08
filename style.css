@@ -1,0 +1,115 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	color: var(--tg-theme-text-color);
+	background: var(--tg-theme-bg-color);
+}
+
+.container {
+	max-width: 390px;
+}
+
+.inner {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 250px 250px 250px;
+}
+
+.img {
+	width: 100px;
+}
+
+.item {
+	text-align: center;
+}
+
+.item h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.item p {
+    font-size: 1rem;
+    margin: 10px 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 20px;
+	border: none;
+	background: rgb(248, 168, 24);
+	border-radius: 10px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+
+	transition: background .2s linear;
+}
+
+.btn:hover {
+	background: lightgreen;
+}
+
+.cart {
+    position: fixed;
+    bottom: 20px; /* Расположение снизу */
+    right: 20px; /* Расположение справа */
+    background-color: white; /* Цвет фона корзины */
+    padding: 10px;
+    border-radius: 25%; /* Для круглой формы */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999; /* Слой поверх других элементов */
+}
+
+.cart img {
+    width: 40px; /* Размер изображения корзины */
+    height: 40px;
+}
+
+.item-count {
+    color: #00C75A; /* Цвет текста */
+    font-size: 16px; /* Размер шрифта счетчика */
+    margin-left: 5px; /* Отступ от изображения корзины */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#form {
+    display: none;
+    text-align: center;
+}
+
+input {
+    width: 90%;
+    outline: none;
+    margin: 10px 5%;
+    padding: 15px 10px;
+    font-size: 14px;
+    border: 2px solid silver;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color: #db5d5d;
+}
+
+.order {
+	display: inline-block;
+	padding: 10px 20px;
+	border: none;
+	background: rgb(248, 168, 24);
+	border-radius: 10px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+
+	transition: background .2s linear;
+}
+
+.btn:hover {
+	background: lightgreen;
+}
