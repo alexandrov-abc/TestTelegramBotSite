@@ -1,77 +1,104 @@
-const itemCountElement = document.querySelector('.item-count');
-const addButton1 = document.getElementById('btn1');
-const addButton2 = document.getElementById('btn2');
-const addButton3 = document.getElementById('btn3');
-const addButton4 = document.getElementById('btn4');
-const addButton5 = document.getElementById('btn5');
-const addButton6 = document.getElementById('btn6');
-const addButton7 = document.getElementById('btn7');
-const addButton8 = document.getElementById('btn8');
-const addButton9 = document.getElementById('btn9');
+let tg = window.Telegram.WebApp;
 
-// Инициализируем счетчик товаров
-let itemCount = 0;
+tg.expand();
 
-// Обработчик события для кнопки "Add"
-addButton1.addEventListener('click', function() {
-    // Увеличиваем счетчик товаров
-    itemCount++;
-    // Обновляем текст счетчика товаров
-    itemCountElement.textContent = itemCount;
+tg.MainButton.textColor = '#FFFFFF';
+tg.MainButton.color = '#2cab37';
+
+let item = "";
+
+let btn1 = document.getElementById("btn1");
+let btn2 = document.getElementById("btn2");
+let btn3 = document.getElementById("btn3");
+let btn4 = document.getElementById("btn4");
+let btn5 = document.getElementById("btn5");
+let btn6 = document.getElementById("btn6");
+
+btn1.addEventListener("click", function(){
+	if (tg.MainButton.isVisible) {
+		tg.MainButton.hide();
+	}
+	else {
+		tg.MainButton.setText("Вы выбрали товар 1!");
+		item = "1";
+		tg.MainButton.show();
+	}
 });
 
-addButton2.addEventListener('click', function() {
-    // Увеличиваем счетчик товаров
-    itemCount++;
-    // Обновляем текст счетчика товаров
-    itemCountElement.textContent = itemCount;
+btn2.addEventListener("click", function(){
+	if (tg.MainButton.isVisible) {
+		tg.MainButton.hide();
+	}
+	else {
+		tg.MainButton.setText("Вы выбрали товар 2!");
+		item = "2";
+		tg.MainButton.show();
+	}
 });
 
-addButton3.addEventListener('click', function() {
-    // Увеличиваем счетчик товаров
-    itemCount++;
-    // Обновляем текст счетчика товаров
-    itemCountElement.textContent = itemCount;
+btn3.addEventListener("click", function(){
+	if (tg.MainButton.isVisible) {
+		tg.MainButton.hide();
+	}
+	else {
+		tg.MainButton.setText("Вы выбрали товар 3!");
+		item = "3";
+		tg.MainButton.show();
+	}
 });
 
-addButton4.addEventListener('click', function() {
-    // Увеличиваем счетчик товаров
-    itemCount++;
-    // Обновляем текст счетчика товаров
-    itemCountElement.textContent = itemCount;
+btn4.addEventListener("click", function(){
+	if (tg.MainButton.isVisible) {
+		tg.MainButton.hide();
+	}
+	else {
+		tg.MainButton.setText("Вы выбрали товар 4!");
+		item = "4";
+		tg.MainButton.show();
+	}
 });
 
-addButton5.addEventListener('click', function() {
-    // Увеличиваем счетчик товаров
-    itemCount++;
-    // Обновляем текст счетчика товаров
-    itemCountElement.textContent = itemCount;
+btn5.addEventListener("click", function(){
+	if (tg.MainButton.isVisible) {
+		tg.MainButton.hide();
+	}
+	else {
+		tg.MainButton.setText("Вы выбрали товар 5!");
+		item = "5";
+		tg.MainButton.show();
+	}
 });
 
-addButton6.addEventListener('click', function() {
-    // Увеличиваем счетчик товаров
-    itemCount++;
-    // Обновляем текст счетчика товаров
-    itemCountElement.textContent = itemCount;
+btn6.addEventListener("click", function(){
+	if (tg.MainButton.isVisible) {
+		tg.MainButton.hide();
+	}
+	else {
+		tg.MainButton.setText("Вы выбрали товар 6!");
+		item = "6";
+		tg.MainButton.show();
+	}
 });
 
-addButton7.addEventListener('click', function() {
-    // Увеличиваем счетчик товаров
-    itemCount++;
-    // Обновляем текст счетчика товаров
-    itemCountElement.textContent = itemCount;
+
+Telegram.WebApp.onEvent("mainButtonClicked", function(){
+	tg.sendData(item);
 });
 
-addButton8.addEventListener('click', function() {
-    // Увеличиваем счетчик товаров
-    itemCount++;
-    // Обновляем текст счетчика товаров
-    itemCountElement.textContent = itemCount;
-});
 
-addButton9.addEventListener('click', function() {
-    // Увеличиваем счетчик товаров
-    itemCount++;
-    // Обновляем текст счетчика товаров
-    itemCountElement.textContent = itemCount;
-});
+let usercard = document.getElementById("usercard");
+
+let p = document.createElement("p");
+
+p.innerText = `${tg.initDataUnsafe.user.first_name}
+${tg.initDataUnsafe.user.last_name}`;
+
+usercard.appendChild(p);
+
+
+
+
+
+
+
+
