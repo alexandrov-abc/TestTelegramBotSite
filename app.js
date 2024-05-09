@@ -20,7 +20,7 @@ btn1.addEventListener("click", function(){
 	}
 	else {
 		tg.MainButton.setText("Вы выбрали товар 1!");
-		item = "1";
+		item = "1. Яблоко";
 		tg.MainButton.show();
 	}
 });
@@ -31,7 +31,7 @@ btn2.addEventListener("click", function(){
 	}
 	else {
 		tg.MainButton.setText("Вы выбрали товар 2!");
-		item = "2";
+		item = "2. Банан";
 		tg.MainButton.show();
 	}
 });
@@ -42,7 +42,7 @@ btn3.addEventListener("click", function(){
 	}
 	else {
 		tg.MainButton.setText("Вы выбрали товар 3!");
-		item = "3";
+		item = "3. Киви";
 		tg.MainButton.show();
 	}
 });
@@ -53,7 +53,7 @@ btn4.addEventListener("click", function(){
 	}
 	else {
 		tg.MainButton.setText("Вы выбрали товар 4!");
-		item = "4";
+		item = "4. Арбуз";
 		tg.MainButton.show();
 	}
 });
@@ -64,7 +64,7 @@ btn5.addEventListener("click", function(){
 	}
 	else {
 		tg.MainButton.setText("Вы выбрали товар 5!");
-		item = "5";
+		item = "5. Слива";
 		tg.MainButton.show();
 	}
 });
