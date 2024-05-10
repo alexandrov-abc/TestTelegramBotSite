@@ -1,18 +1,18 @@
-let tg = window.Telegram.WebApp;
+var tg = window.Telegram.WebApp;
 
 tg.expand();
 
 tg.MainButton.textColor = '#FFFFFF';
 tg.MainButton.color = '#2cab37';
 
-let item = "";
+var item = "";
 
-let btn1 = document.getElementById("btn1");
-let btn2 = document.getElementById("btn2");
-let btn3 = document.getElementById("btn3");
-let btn4 = document.getElementById("btn4");
-let btn5 = document.getElementById("btn5");
-let btn6 = document.getElementById("btn6");
+var btn1 = document.getElementById("btn1");
+var btn2 = document.getElementById("btn2");
+var btn3 = document.getElementById("btn3");
+var btn4 = document.getElementById("btn4");
+var btn5 = document.getElementById("btn5");
+var btn6 = document.getElementById("btn6");
 
 btn1.addEventListener("click", function(){
 	if (tg.MainButton.isVisible) {
@@ -86,9 +86,9 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 });
 
 
-let usercard = document.getElementById("usercard");
+var usercard = document.getElementById("usercard");
 
-let p = document.createElement("p");
+var p = document.createElement("p");
 
 p.innerText = `${tg.initDataUnsafe.user.first_name}
 ${tg.initDataUnsafe.user.last_name}`;
