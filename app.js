@@ -31,7 +31,7 @@ btn2.addEventListener("click", function(){
 	}
 	else {
 		tg.MainButton.setText("Вы выбрали товар 2!");
-		item = "2. Банан";
+		item = "2. Банан test";
 		tg.MainButton.show();
 	}
 });
