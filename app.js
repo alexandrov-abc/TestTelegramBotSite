@@ -90,9 +90,9 @@ var usercard = document.getElementById("usercard");
 
 var p = document.createElement("p");
 
-//p.innerText = `${tg.initDataUnsafe.user.first_name} ${tg.initDataUnsafe.user.last_name}`;
+p.innerText = `Клиент: ${tg.initDataUnsafe.user.first_name} ${tg.initDataUnsafe.user.last_name}`;
 //p.innerText = 'Клиент: ' + tg.initDataUnsafe.user.first_name + ' ' + tg.initDataUnsafe.user.last_name;
-p.innerText = 'КлиентTest: ';
+//p.innerText = 'КлиентTest: ';
 usercard.appendChild(p);
 //usercard.innerHTML = 'Клиент: ' + tg.initDataUnsafe.user.first_name + ' ' + tg.initDataUnsafe.user.last_name;
 
