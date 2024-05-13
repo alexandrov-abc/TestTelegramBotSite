@@ -94,7 +94,7 @@ var p = document.createElement("p");
 //p.innerText = 'Клиент: ' + tg.initDataUnsafe.user.first_name + ' ' + tg.initDataUnsafe.user.last_name;
 //p.innerText = 'КлиентTest: ';
 //usercard.appendChild(p);
-usercard.InnerText = 'КлиентTest1: ';
+usercard.Text = 'КлиентTest2: ';
 
 
 
