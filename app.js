@@ -90,7 +90,7 @@ var usercard = document.getElementById("usercard");
 
 var p = document.createElement("p");
 
-p.innerText = `${tg.initDataUnsafe.user.first_name}
+p.innerText = `Пользователь: ${tg.initDataUnsafe.user.first_name}
 ${tg.initDataUnsafe.user.last_name}`;
 
 usercard.appendChild(p);
